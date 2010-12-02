@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Auto Complete</title>
+	<script type="text/javascript" src="../string/string.js"></script>
+	<script type="text/javascript" src="../classname/classname.js"></script>
+	<script type="text/javascript" src="autocomplete.js"></script>
+	<link rel="stylesheet" type="text/css" href="autocomplete.css" />
+</head>
+<body>
+ <input type="text" id="txt" />
+ <script type="text/javascript">
+	var data = [
+		"not", "spot"," absolute", "abc", "basic", "customer",
+		"efficent", "focus", "global", "high",
+		"intergate", "jack", "kill", "mountain", "net",
+		"dfal", "dom", "document", "die", "df", 
+		"star gate", "star trek", "The long life"
+	];
+
+	var ac = new AutoComplete(
+		data, document.getElementById("txt"));
+ </script>
+</body>
+</html>

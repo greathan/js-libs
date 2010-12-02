@@ -1,0 +1,16 @@
+body{
+    margin:0;
+    padding:0;
+}
+.marker{
+    border-radius:10px;
+    -webkit-box-shadow:0 0 10px #333;
+    width:300px;
+    height:200px;
+    background-color:rgba(255,255,255,0.8);
+    position:absolute;
+    top:20px;
+    left:200px;
+    padding: 5px;
+    z-index:2;
+}

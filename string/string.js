@@ -23,9 +23,9 @@ String.prototype.$replace = function(obj) {
 };
 String.prototype.format = function() {
 	var args = arguments, l = args.length;
-	if (l > 1) {
+	if (l > 0) {
 		return this.replace(/\$(\d)/g, function(s, k) {
-			return args[k] == undefined ? '' : args[k];
+			return args[k - 1] == undefined ? '' : args[k - 1];
 		});
 	} else return this;
 };
